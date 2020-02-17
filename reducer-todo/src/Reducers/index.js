@@ -15,7 +15,7 @@ export const reducer = ( state, action ) => {
                 listItem: action.value
             }
         case 'ADD_ITEM':
-            const newID = new Date.now()
+            const newID = Date.now()
             const newItem = {
                 item: action.item,
                 completed: false,
